@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="915.0" style="-fx-background-color: #d2d2d2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2d2d2" height="265.0" layoutX="16.0" layoutY="86.0" stroke="#8a8a8a" strokeType="INSIDE" width="435.0" />
+      <Label layoutX="43.0" layoutY="108.0" text="Parts">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchPartMain" layoutX="220.0" layoutY="97.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#searchPartMain" prefHeight="33.0" prefWidth="79.0" style="-fx-border-color: GRAY;" text="Search" AnchorPane.topAnchor="97.0" />
+      <Button fx:id="addPartMain" layoutX="156.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#addPartMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Add" />
+      <Button fx:id="deletePartMain" layoutX="340.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#deletePartMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Delete" />
+      <Button fx:id="modifyPartMain" layoutX="248.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#modifyPartMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Modify" />
+      <TableView fx:id="partsTable" layoutX="25.0" layoutY="138.0" prefHeight="134.0" prefWidth="417.0">
+         <columns>
+            <TableColumn fx:id="partID" prefWidth="92.79998588562012" text="Part ID" />
+            <TableColumn fx:id="partName" prefWidth="94.40001678466797" text="Part Name" />
+            <TableColumn fx:id="partInventoryLev" prefWidth="106.39997863769531" text="Inventory Level" />
+            <TableColumn fx:id="partPrice" prefWidth="124.0" text="Price/Cost per Unit" />
+         </columns>
+      </TableView>
+      <Label layoutX="9.0" layoutY="35.0" text="Inventory Mangement System">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitMain" layoutX="748.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#exitMain" prefHeight="27.0" prefWidth="87.0" style="-fx-border-color: GRAY;" text="Exit" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2d2d2" height="265.0" layoutX="463.0" layoutY="86.0" stroke="#8a8a8a" strokeType="INSIDE" width="435.0" />
+      <Button fx:id="searchProductMain" layoutX="658.0" layoutY="98.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#searchProductMain" prefHeight="33.0" prefWidth="79.0" style="-fx-border-color: GRAY;" text="Search" />
+      <Label layoutX="486.0" layoutY="108.0" text="Products">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="productsTable" layoutX="471.0" layoutY="138.0" prefHeight="134.0" prefWidth="417.0">
+         <columns>
+            <TableColumn fx:id="productID" prefWidth="92.79998588562012" text="Product ID" />
+            <TableColumn fx:id="productName" prefWidth="94.40001678466797" text="Product Name" />
+            <TableColumn fx:id="productInventoryLev" prefWidth="106.39997863769531" text="Inventory Level" />
+            <TableColumn fx:id="productPrice" prefWidth="124.0" text="Price per Unit" />
+         </columns>
+      </TableView>
+      <Button fx:id="addProductMain" layoutX="606.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#addProductMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Add" />
+      <Button fx:id="deleteProductMain" layoutX="789.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#deleteProductMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Delete" />
+      <Button fx:id="modifyProductMain" layoutX="698.0" layoutY="278.0" mnemonicParsing="false" onMouseClicked="#modifyProductMain" prefHeight="30.0" prefWidth="82.0" style="-fx-border-color: GRAY;" text="Modify" />
+      <TextField fx:id="textBoxPart" layoutX="307.0" layoutY="105.0" prefHeight="26.0" prefWidth="127.0" />
+      <TextField fx:id="textBoxProduct" layoutX="748.0" layoutY="105.0" prefHeight="26.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>

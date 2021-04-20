@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="423.0" style="-fx-background-color: #d2d2d2; -fx-border-color: GRAY;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="38.0" layoutY="25.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="80.0" text="ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="125.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="217.0" text="Inv">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="264.0" text="Min">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="264.0" text="Max">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="51.0" layoutY="310.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="171.0" text="Price/Cost">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addField" layoutX="164.0" layoutY="306.0" prefHeight="26.0" prefWidth="114.0" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addMin" layoutX="89.0" layoutY="259.0" prefHeight="26.0" prefWidth="114.0" promptText="Min" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addMax" layoutX="256.0" layoutY="259.0" prefHeight="27.0" prefWidth="114.0" promptText="Max" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addPrice" layoutX="159.0" layoutY="167.0" prefHeight="26.0" prefWidth="145.0" promptText="Price/Cost" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addInventory" layoutX="158.0" layoutY="212.0" prefHeight="26.0" prefWidth="146.0" promptText="Inv" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addName" layoutX="158.0" layoutY="120.0" prefHeight="26.0" prefWidth="147.0" promptText="Name" style="-fx-border-color: GRAY;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="158.0" layoutY="75.0" prefHeight="26.0" prefWidth="148.0" promptText="Auto Gen - Disabled" style="-fx-background-color: #d2d2d2; -fx-border-color: GRAY; -fx-font-color: BLACK;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelAddPart" layoutX="282.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#cancelAddPart" prefHeight="27.0" prefWidth="90.0" style="-fx-border-color: GRAY;" text="Cancel" />
+      <Button fx:id="saveAddPart" layoutX="200.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#saveAddPart" prefHeight="27.0" prefWidth="63.0" style="-fx-border-color: GRAY;" text="Save" />
+      <RadioButton fx:id="inHouseAddPart" layoutX="146.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#inHouseAddPart" text="In-House" />
+      <RadioButton fx:id="outsourcedAddPart" layoutX="256.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#outsourcedAddPart" text="Outsourced" />
+   </children>
+</AnchorPane>
